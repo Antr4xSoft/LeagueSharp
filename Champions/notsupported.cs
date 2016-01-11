@@ -13,6 +13,9 @@ namespace SUPmaster.champions
 {
     internal class notsupported
     {
-
+        public static void load()
+        {
+            
+        }
     }
 }

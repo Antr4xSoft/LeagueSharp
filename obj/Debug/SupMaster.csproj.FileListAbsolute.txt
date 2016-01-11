@@ -1,3 +1,4 @@
 c:\users\송준원\documents\visual studio 2015\Projects\SupMaster\SupMaster\bin\Debug\SupMaster.exe.config
 C:\Users\송준원\Documents\Visual Studio 2015\Projects\SupMaster\SupMaster\obj\Debug\SupMaster.csprojResolveAssemblyReference.cache
 C:\Users\송준원\Documents\GitHub\LeagueSharp\bin\Debug\SupMaster.exe.config
+C:\Users\송준원\Documents\Visual Studio 2015\Projects\SupMaster\LeagueSharp\bin\Debug\SupMaster.exe.config
