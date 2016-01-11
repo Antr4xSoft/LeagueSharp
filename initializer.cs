@@ -21,13 +21,13 @@ namespace SUPmaster
 
             Game.PrintChat("SUPmaster AIO by Antr4xSoft Loaded");
 
-            if (Player.ChampionName == "Thresh")
+            if (Player.ChampionName == "Azir") //thresh ! not azir
             {
                 champions.thresh.load();
             }
             else
             {
-                champions.notsupported.load();
+                champions.notsupported.load(); 
             }
 
         }
