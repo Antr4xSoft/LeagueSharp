@@ -107,7 +107,7 @@ namespace SUPmaster.champions
             Obj_AI_Hero CatchedQtarget;
 
             if (catchedUnit != null)
-            {   
+            {
                 Catched = true;
                 CatchedQtarget = catchedUnit;
             }
@@ -122,8 +122,7 @@ namespace SUPmaster.champions
 
         #endregion
 
-
-
+        
 
         #region E
 
@@ -131,21 +130,21 @@ namespace SUPmaster.champions
 
         static void CastE(Obj_AI_Hero enemy)
         {
-            if(!E.IsReady() || enemy == null || !enemy.IsValidTarget())
+            if (!E.IsReady() || enemy == null || !enemy.IsValidTarget())
             {
                 return;
             }
             bool caught = IsPulling().Item1;
             Obj_AI_Hero CatchedQtarget = IsPulling().Item2;
 
-            if(!caught && qTimer == 0 )
+            if (!caught && qTimer == 0)
             {
-                if(Player.Distance(enemy.Position) <= E.Range)
+                if (Player.Distance(enemy.Position) <= E.Range)
                 {
-                    if(Player.HealthPercentage() < 20 && enemy.HealthPercentage() > 20)
+                    if (Player.HealthPercentage() < 20 && enemy.HealthPercentage() > 20)
                     {
                         Push(enemy);
-                    } 
+                    }
                     else
                     {
                         Pull(enemy);
@@ -173,13 +172,14 @@ namespace SUPmaster.champions
         #endregion
 
 
-
+     
         #region Combo
 
         private static void combo()
         {
             var target = TargetSelector.GetTarget(1100, TargetSelector.DamageType.Magical);
             var etarget = TargetSelector.GetTarget(400, TargetSelector.DamageType.Magical);
+            var rtarget = TargetSelector.GetTarget(600, TargetSelector.DamageType.Magical);
 
             if (Config.Item("ComboActive").GetValue<bool>())
             {
@@ -197,7 +197,7 @@ namespace SUPmaster.champions
         }
 
 
-        
+
         #endregion
 
 

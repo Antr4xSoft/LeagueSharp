@@ -21,7 +21,7 @@ namespace SUPmaster
 
             Game.PrintChat("SUPmaster AIO by Antr4xSoft Loaded");
 
-            if (Player.ChampionName == "Azir") //thresh ! not azir
+            if (Player.ChampionName == "Thresh") 
             {
                 champions.thresh.load();
             }
